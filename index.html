@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Prismatic Software - Color Hopper</title>
+</head>
+
+<body>
+  
+  <header>
+    <h1>Prismatic Software - Color Hopper</h1>
+  </header>
+
+  <div id="wrapper">
+
+    <div id="links">
+      <h3>Project Links</h3>
+      <p>
+        <a href="https://nick-theis.github.io/ColorHopper/">GitHub Pages</a><br>
+        <a href="https://www.pivotaltracker.com/n/projects/2554146">Pivotal Tracker</a>
+      </p>
+    </div>
+
+    <div id="convertRGB">
+      <h3>Convert RGB values to Barycentric Maxwell hues</h3>
+
+      <form id="rgb">
+        <label for="red">R: </label>
+        <input type="number" size="5" id="red" name="red">
+        <label for="green">G: </label>
+        <input type="number" size="5" id="green" name="green">
+        <label for="blue">B: </label>
+        <input type="number" size="5" id="blue" name="blue"><br><br>
+        <input type="button" value="Convert" onclick="Calculate()">
+      </form>
+      <br>
+      <form id="hues">
+        <label for="rho">&#961 : </label>
+        <input type="number" size="5" id="rho" name="rho">
+        <label for="gamma">&#947 : </label>
+        <input type="number" size="5" id="gamma" name="gamma">
+        <label for="beta">&#946 : </label>
+        <input type="number" size="5" id="beta" name="beta">
+      </form>
+      
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
