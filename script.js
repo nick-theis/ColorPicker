@@ -11,6 +11,7 @@ function Calculate() {
   var rho = document.getElementById('rho');
   var gamma = document.getElementById('gamma');
   var beta = document.getElementById('beta');
+  var luminance = document.getElementById('luminance');
 
   // Validating user input
   if (red == "" || isNaN(red)) {
@@ -44,6 +45,9 @@ function Calculate() {
   rho.value = rhoValue;
   gamma.value = gammaValue;
   beta.value = betaValue;
+
+  var luminanceValue = Math.max(rhoValue, gammaValue, betaValue);
+  luminance.value = luminanceValue;
 
   // Helper function to convert RGB to Barycentric Maxwell hues
   function ConvertedValue(color) {
